@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: #ffffff;
+  color: black;
+  padding: 15px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  color: #ffffff;
+ 
+}
+
+.menu li:hover {
+  background-color: #0099cc;
+}
+
+.aside {
+  padding: 15px;
+    color: black;
+    text-align: center;
+    font-size: 5px;
+    margin-left: -479px;
+}
+
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+.button
+ {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 21px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 27px 2px;
+  cursor: pointer;
+    width: 130px;
+    height: 60px;
+border-radius:26px;
+}
+
+.square {
+ height: 187px;
+    width: 156px;
+    background-color: rgb(270, 270, 270);
+    margin-left: 79px;
+    margin-top: 14px;
+    display: inline-block;
+    position: relative;
+    border-radius: 25px;
+    padding: 20px;
+    box-shadow: 10px 10px grey;
+}
+.square img
+{
+width: 121px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: -11px;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Lorem <br>Ipsum</h1>
+</div>
+
+<div class="row">
+  <div class="col-3 col-s-3 menu">
+    <ul>
+      <li class='under'><a href="#home">About</a></li>
+  <li><a href="#service">Services</a></li>
+  <li><a href="#cuisine">Cuisine</a></li>
+  <li><a href="#galery">Gallery</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#book">Book</a></li>
+  <button class="button">Card</button>
+    </ul>
+  </div>
+
+  <div class="col-6 col-s-9">
+    <h1></h1>
+    <div class='text'>
+<h1 class="text">What are you<br>having for lunch?</h1>
+
+</div>
+
+  </div>
+
+  <div class="col-3 col-s-12">
+    <div class="aside">
+      <h1 class='para'>Lorem ipsem dolor sit amet,<br>consecture adiplicing elit<br>sed do euismod tempor<br>incidiunt ut labore et.<br><br><hr style='width: 12%;
+    border-color: red;
+    margin-left: 261px';></h1>
+    </div>
+  </div>
+  
+  <div class='square'>
+      <img src='maxicon.jpg' alt='f1'>
+		<h6 class='exi'>Mexican Taco</h6>
+		</div>
+</div>
+
+
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div>
+
+</body>
+</html>
+
